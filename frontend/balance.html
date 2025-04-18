@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureX Bank - Balance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-balance">
+
+    <header class="app-header">
+        <div class="container">
+            <a href="balance.html" class="logo">SecureX Bank</a>
+            <nav class="app-nav">
+                <ul>
+                   <li><a href="balance.html" class="active">Balance</a></li>
+                   <li><a href="deposit.html">Deposit</a></li>
+                   <li><a href="withdraw.html">Withdraw</a></li>
+                   <li><a href="exchange-securex-deposit.html">Exchange Deposit</a></li>
+                   <li><a href="exchange-securex-withdraw.html">Exchange Withdraw</a></li>
+                   <li><a href="login.html">Logout</a></li> </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Account Overview</h1>
+        <div class="balance-cards" id="balance-display">
+            <div class="balance-card" id="inr-card">
+                <h3>Balance (INR)</h3>
+                <p class="balance-amount">
+                    <span class="currency-symbol">₹</span>50,000<span style="font-size: 1.5rem; font-weight: 500;">.00</span> </p>
+                <a href="deposit.html" class="btn btn-success" style="width: auto; padding: 8px 15px; font-size: 0.9rem; margin-top: 15px;">Deposit INR</a>
+            </div>
+            <div class="balance-card" id="usd-card">
+                <h3>Balance (USD)</h3>
+                 <p class="balance-amount">
+                    <span class="currency-symbol">$</span>1,250<span style="font-size: 1.5rem; font-weight: 500;">.75</span> </p>
+                 <a href="exchange-securex-deposit.html" class="btn btn-secondary" style="width: auto; padding: 8px 15px; font-size: 0.9rem; margin-top: 15px;">Deposit FX</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+             &copy; <span id="current-year">2025</span> SecureX Bank. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+    </body>
+</html>
